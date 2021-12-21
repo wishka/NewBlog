@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  get 'blog_pages/home'
-  get 'blog_pages/help'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'customers/new'
+  root 'blog_pages#home'
+  get 'help'    =>  'blog_pages#help'
+  get 'about'   =>  'blog_pages#about'
+  get 'contact' =>  'blog_pages#contact'
+  get 'signup'  =>  'customers#new'
+
 end
