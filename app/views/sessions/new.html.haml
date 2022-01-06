@@ -6,7 +6,9 @@
     = simple_form_for(:session, url: login_path) do |f|
       = f.input :email, class: 'form-control'
       = f.input :password, class: 'form-control'
+      = f.label :remember_me, class: "checkbox inline" do
+        = f.check_box :remember_me
+        %span Remember me on this computer
       = f.button :submit, "Log in", class: "btn btn-primary"
 
-      %p New user?
-      = link_to "Sign up now!", signup_path
+      = link_to "New? Sign up now!", signup_path
