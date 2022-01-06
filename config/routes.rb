@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get 'about'   =>  'blog_pages#about'
   get 'contact' =>  'blog_pages#contact'
   get 'signup'  =>  'customers#new'
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
 
   resources :customers
 end

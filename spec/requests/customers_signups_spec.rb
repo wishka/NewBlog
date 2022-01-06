@@ -22,6 +22,7 @@ RSpec.describe "CustomersSignups", type: :request do
                                                 password_confirmation: "password" }
       end
       assert_template 'customers/show'
+      assert is_logged_in?
     end
   end
 end
