@@ -2,9 +2,6 @@ require 'rails_helper'
 
 RSpec.describe "CustomersLogins", type: :request do
   describe "GET /customers_logins" do
-    def setup
-      @customer = customers(:michael)
-    end
 
     def is_logged_in?
       !session[:customer_id].nil?

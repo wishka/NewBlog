@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Customer.create!(name:  "Example Customer",
+             email: "exale@example.com",
+             cell: 89991112233,
+             password:              "foobar",
+             password_confirmation: "foobar",
+             admin: true)
+
+20.times do |n|
+  name  = Faker::Name.name
+  email = "exale-#{n+1}@example.com"
+  password = "password"
+  cell = Faker::PhoneNumber.cell_phone_in_e164
+  Customer.create!(name:  name,
+               email: email,
+               cell: cell,
+               password:              password,
+               password_confirmation: password)
+end

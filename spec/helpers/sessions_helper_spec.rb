@@ -11,10 +11,6 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe SessionsHelper, type: :helper do
-  def setup
-    @customer = customers(:michael)
-    remember(@customer)
-  end
 
   it "current_user returns right user when session is nil" do
     assert_equal @customer, current_user
@@ -22,7 +18,7 @@ RSpec.describe SessionsHelper, type: :helper do
   end
 
   it "current_user returns nil when remember digest is wrong" do
-    @customer.update_attribute(:remember_digest, Customer.digest(Customer.new_token))
+    @customer.update(:remember_digest, Customer.digest(Customer.new_token))
     assert_nil current_user
   end
 end
