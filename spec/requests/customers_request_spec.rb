@@ -44,8 +44,8 @@ RSpec.describe "Customers", type: :request do
     assert_redirected_to login_url
   end
 
-  test "should redirect destroy when logged in as a non-admin" do
-    log_in_as(@other_customer)
+  it "should redirect destroy when logged in as a non-admin" do
+    log_in_as(@customer)
     assert_no_difference 'Customer.count' do
       delete :destroy, id: @customer
     end

@@ -1,0 +1,6 @@
+Привет,
+= @customer.name
+
+Добро пожаловать в Учебное Приложение! Перейдите по ссылке для активации аккаунта:
+
+= edit_account_activation_url(@customer.activation_token, email: @customer.email)

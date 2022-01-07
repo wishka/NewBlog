@@ -66,5 +66,8 @@ RSpec.describe Customer, type: :model do
       assert subject.invalid?
     end
 
+    it "authenticated? should return false for a customer with nil digest" do
+      assert_not @customer.authenticated?(:remember, '')
+    end
   end
 end
