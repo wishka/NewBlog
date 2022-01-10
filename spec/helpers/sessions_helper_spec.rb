@@ -12,13 +12,13 @@ require 'rails_helper'
 # end
 RSpec.describe SessionsHelper, type: :helper do
 
-  it "current_user returns right user when session is nil" do
-    assert_equal @customer, current_user
+  it "current_customer returns right user when session is nil" do
+    assert_equal @customer, current_customer
     assert is_logged_in?
   end
 
-  it "current_user returns nil when remember digest is wrong" do
+  it "current_customer returns nil when remember digest is wrong" do
     @customer.update(:remember_digest, Customer.digest(Customer.new_token))
-    assert_nil current_user
+    assert_nil current_customer
   end
 end

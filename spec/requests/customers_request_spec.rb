@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe "Customers", type: :request do
+  before do
+    customer = create(:customer)
+  end
+
   it "should redirect index when not logged in" do
     get "/customers"
     assert_redirected_to login_url

@@ -1,0 +1,37 @@
+example_id                                       | status | run_time        |
+------------------------------------------------ | ------ | --------------- |
+./spec/helpers/sessions_helper_spec.rb[1:1]      | failed | 0.00554 seconds |
+./spec/helpers/sessions_helper_spec.rb[1:2]      | failed | 0.00574 seconds |
+./spec/mailers/customer_spec.rb[1:1]             | failed | 0.00184 seconds |
+./spec/mailers/customer_spec.rb[1:2]             | failed | 0.00229 seconds |
+./spec/models/customer_spec.rb[1:1:1:1]          | passed | 0.00495 seconds |
+./spec/models/customer_spec.rb[1:1:2]            | passed | 0.00542 seconds |
+./spec/models/customer_spec.rb[1:1:3]            | passed | 0.00402 seconds |
+./spec/models/customer_spec.rb[1:1:4]            | passed | 0.0066 seconds  |
+./spec/models/customer_spec.rb[1:1:5]            | passed | 0.00882 seconds |
+./spec/models/customer_spec.rb[1:1:6]            | passed | 0.01032 seconds |
+./spec/models/customer_spec.rb[1:1:7]            | passed | 0.00461 seconds |
+./spec/models/customer_spec.rb[1:1:8]            | passed | 0.00483 seconds |
+./spec/models/customer_spec.rb[1:1:9]            | failed | 0.00209 seconds |
+./spec/requests/blog_pages_request_spec.rb[1:1]  | passed | 0.02596 seconds |
+./spec/requests/blog_pages_request_spec.rb[1:2]  | passed | 0.04044 seconds |
+./spec/requests/blog_pages_request_spec.rb[1:3]  | passed | 0.04038 seconds |
+./spec/requests/blog_pages_request_spec.rb[1:4]  | passed | 0.04256 seconds |
+./spec/requests/customers_edits_spec.rb[1:1:1]   | failed | 0.00624 seconds |
+./spec/requests/customers_edits_spec.rb[1:1:2]   | failed | 0.00356 seconds |
+./spec/requests/customers_logins_spec.rb[1:1:1]  | failed | 0.03699 seconds |
+./spec/requests/customers_logins_spec.rb[1:1:2]  | failed | 1.3 seconds     |
+./spec/requests/customers_logins_spec.rb[1:1:3]  | failed | 0.00149 seconds |
+./spec/requests/customers_logins_spec.rb[1:1:4]  | failed | 0.00158 seconds |
+./spec/requests/customers_request_spec.rb[1:1]   | failed | 0.00418 seconds |
+./spec/requests/customers_request_spec.rb[1:2]   | failed | 0.00412 seconds |
+./spec/requests/customers_request_spec.rb[1:3]   | failed | 0.00413 seconds |
+./spec/requests/customers_request_spec.rb[1:4]   | failed | 0.00416 seconds |
+./spec/requests/customers_request_spec.rb[1:5]   | failed | 0.36699 seconds |
+./spec/requests/customers_request_spec.rb[1:6]   | failed | 0.00483 seconds |
+./spec/requests/customers_request_spec.rb[1:7]   | failed | 0.00439 seconds |
+./spec/requests/customers_request_spec.rb[1:8]   | failed | 0.00417 seconds |
+./spec/requests/customers_signups_spec.rb[1:1:1] | failed | 0.04984 seconds |
+./spec/requests/customers_signups_spec.rb[1:1:2] | failed | 0.05153 seconds |
+./spec/requests/password_resets_spec.rb[1:1:1]   | failed | 0.04681 seconds |
+./spec/requests/site_layouts_spec.rb[1:1:1]      | passed | 0.03378 seconds |
