@@ -8,7 +8,7 @@ class CustomersController < ApplicationController
   end
 
   def index
-    @customers = Customer.all
+    @customers = Customer.where(blacklist: false)
   end
 
   def new
@@ -42,7 +42,7 @@ class CustomersController < ApplicationController
   def destroy
     Customer.find(params[:id]).destroy
     flash[:success] = "Customer deleted"
-    redirect_to customers_url
+    redirect_to customers_rath
   end
 
   private

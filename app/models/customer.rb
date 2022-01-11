@@ -67,6 +67,16 @@ class Customer < ApplicationRecord
     reset_sent_at < 2.hours.ago
   end
 
+  def add_to_blacklist
+    if @customer.update(blacklist: true)
+      redirect_to customers_path
+    end
+  end
+
+  def remove_from_blacklist
+    @customer.update(blacklist: false)
+  end
+
   private
 
     def downcase_email
